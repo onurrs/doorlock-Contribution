@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Door Lock</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header id="header" class="fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="navbar-brand d-flex align-items-center">
+                    <a href="#" class="d-flex align-items-center text-decoration-none scroll-top">
+                        <img src="https://img.icons8.com/?size=100&id=48526&format=png&color=FFFFFF" alt="Logo" class="logo me-2">
+                        <span class="brand-name">DOOR LOCK</span>
+                    </a>
+                </div>
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#features">ÖZELLİKLER</a>
+                    <a class="nav-link" href="#about">HAKKINDA</a>
+                    <a class="nav-link" href="#how-it-works">NASIL ÇALIŞIR</a>
+                    <a class="nav-link" href="#gallery">GALERİ</a>
+                    <a class="nav-link" href="#team">EKİP</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <style>
+        #intro {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                            url('https://images.unsplash.com/photo-1558002038-1055907df827?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+        }
+    </style>
+
+    <section id="intro" class="d-flex align-items-center">
+        <div class="container text-center">
+            <div class="intro-content">
+                <h1 class="display-3 mb-4">Akıllı Kapı Kilidi Sistemimize<br>Hoş Geldiniz!</h1>
+                <h2 class="h3 mb-5">Güvenli, Pratik ve Yüz Tanıma Teknolojisi İle Destekleniyor.</h2>
+                <button class="btn more-info-btn" onclick="scrollToFeatures()">DAHA FAZLA BİLGİ</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Placeholder sections -->
+    <section id="features" class="min-vh-100 py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">ÖZELLİKLER</h2>
+            
+            <div class="features-timeline">
+                <!-- Feature 1: Yüz Tanıma -->
+                <div class="feature-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-5 text-end">
+                            <h3>Yüz Tanıma Teknolojisi</h3>
+                            <p>Geliştirdiğimiz kapı kilidi, yüksek güvenlikli yüz tanıma teknolojisiyle donatılmıştır. Bu sistem, yalnızca yetkilendirilmiş kişilerin kapıyı açabilmesini sağlar. Kullanıcıların yüz verileri, güvenli bir şekilde saklanır ve her girişte anında doğrulama yapılır. Bu sayede, fiziksel anahtarlara veya şifreye gerek kalmaz. Yüz tanıma, hızlı, güvenli ve pratik bir erişim sağlar.</p>
+                        </div>
+                        <div class="col-md-2 feature-image-wrapper">
+                            <div class="feature-image">
+                                <img src="https://images.unsplash.com/photo-1667986292516-f27450ae75a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Yüz Tanıma">
+                            </div>
+                        </div>
+                        <div class="col-md-5"></div>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Mobil Uygulama -->
+                <div class="feature-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-5"></div>
+                        <div class="col-md-2 feature-image-wrapper">
+                            <div class="feature-image">
+                                <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Mobil Uygulama">
+                            </div>
+                        </div>
+                        <div class="col-md-5 text-start">
+                            <h3>Mobil Uygulama ile Uzaktan Yönetim</h3>
+                            <p>Mobil uygulama sayesinde, akıllı kapı kilidi uzaktan kontrol edilebilir. Kullanıcılar, kapıyı istedikleri yerden açıp kapatabilir, erişim geçmişini görüntüleyebilir ve güvenlik uyarıları alabilir. Bu özellik, pratiklik ve kolay erişim sağlar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 3: Güvenlik -->
+                <div class="feature-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-5 text-end">
+                            <h3>Yüksek Güvenlik</h3>
+                            <p>Yüz tanıma teknolojisi ile yalnızca yetkilendirilmiş kişilerin kapıya erişimi sağlanır. Veriler şifrelenerek güvenli bir şekilde depolanır. Ayrıca, şüpheli aktiviteler hakkında anında bildirim alınır, böylece güvenlik her an kontrol altında tutulur.</p>
+                        </div>
+                        <div class="col-md-2 feature-image-wrapper">
+                            <div class="feature-image">
+                                <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Güvenlik">
+                            </div>
+                        </div>
+                        <div class="col-md-5"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="min-vh-100 py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">HAKKINDA</h2>
+            
+            <!-- Ana Açıklama -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <p class="lead">
+                        Bu proje, Mikroişlemciler Dersi kapsamında geliştirilen bir akıllı giriş-çıkış kontrol sistemidir. 
+                        Sistem, modern yüz tanıma algoritmalarını kullanarak güvenliği artırmayı ve giriş-çıkış hareketlerini 
+                        gerçek zamanlı olarak izlemeyi hedefler.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Sistem Bileşenleri -->
+            <div class="about-section mb-5">
+                <h3 class="text-center mb-4">Sistemin Temel Bileşenleri</h3>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="component-card">
+                            <div class="card-icon">
+                                <i class="fas fa-microchip"></i>
+                            </div>
+                            <h4>Raspberry Pi</h4>
+                            <p>Projenin ana kontrol birimi olarak kullanılır. Kameralardan alınan görüntüleri işler ve yüz tanıma algoritmasını çalıştırır.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="component-card">
+                            <div class="card-icon">
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <h4>Çift Kamera Sistemi</h4>
+                            <ul>
+                                <li>Giriş Kamerası: Giriş yapan kişileri denetler ve yüz tanıma işlemini gerçekleştirir.</li>
+                                <li>Çıkış Kamerası: Çıkan kişilerin yüzlerini tanır ve hareketlerini kaydeder.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="component-card">
+                            <div class="card-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4>Mobil Uygulama</h4>
+                            <ul>
+                                <li>Gerçek Zamanlı İzleme</li>
+                                <li>Güvenlik Kullanıcısı Arayüzü</li>
+                                <li>Admin Yönetim Paneli</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Teknik Özellikler -->
+            <div class="about-section mb-5">
+                <h3 class="text-center mb-4">Teknik Özellikler</h3>
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-card">
+                            <h5>Yüz Tanıma Algoritması</h5>
+                            <p>Yapay zeka tabanlı model ile güvenli kimlik doğrulama</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-card">
+                            <h5>Gerçek Zamanlı Veri İşleme</h5>
+                            <p>Hızlı görüntü işleme ve mobil uygulama entegrasyonu</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-card">
+                            <h5>Veri Güvenliği</h5>
+                            <p>Güvenli veri depolama ve yetkilendirme sistemi</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="feature-card">
+                            <h5>Enerji Verimliliği</h5>
+                            <p>Optimize edilmiş düşük enerji tüketimi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kullanım Alanları -->
+            <div class="about-section">
+                <h3 class="text-center mb-4">Kullanım Alanları</h3>
+                <div class="usage-areas">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <ul class="usage-list">
+                                <li>Ev, ofis veya kampüs gibi alanlarda güvenli giriş-çıkış yönetimi</li>
+                                <li>Yetkili ve yetkisiz kişilerin ayrımının yapılması</li>
+                                <li>Giriş ve çıkış hareketlerinin kayıt altına alınarak analiz edilmesi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="how-it-works" class="min-vh-100 py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">NASIL ÇALIŞIR</h2>
+            
+            <div class="features-timeline">
+                <!-- Step 1: Giriş ve Çıkış Takibi -->
+                <div class="feature-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-5 text-end">
+                            <h3>Giriş ve Çıkış Takibi</h3>
+                            <p>İki Webcam ve MZ80 yakınlık sensörleri ile anında tanıma sistemi. Sensörler, kişiyi algıladığında kameralar aktifleşir ve yüz tanıma işlemi başlar. Bu sistem, sadece yetkilendirilmiş kişilerin giriş yapmasını sağlar.</p>
+                        </div>
+                        <div class="col-md-2 feature-image-wrapper">
+                            <div class="feature-image">
+                                <img src="https://images.unsplash.com/photo-1623949556303-b0d17d198863?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Kamera ve Sensör">
+                            </div>
+                        </div>
+                        <div class="col-md-5"></div>
+                    </div>
+                </div>
+
+                <!-- Step 2: Veritabanı Yönetimi -->
+                <div class="feature-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-5"></div>
+                        <div class="col-md-2 feature-image-wrapper">
+                            <div class="feature-image">
+                                <img src="https://images.unsplash.com/photo-1633412802994-5c058f151b66?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Veritabanı">
+                            </div>
+                        </div>
+                        <div class="col-md-5 text-start">
+                            <h3>Veritabanı Yönetimi</h3>
+                            <p>AWS RDS üzerinde yapılandırılmış veri tabanı ile çalışır. Raspberry Pi, personel ID'sini login/logout tablolarına iletir. Trigger fonksiyonu, ID'ye ait bilgileri zaman damgası ile kaydeder.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3: Mobil Uygulama -->
+                <div class="feature-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-5 text-end">
+                            <h3>Mobil Uygulama Entegrasyonu</h3>
+                            <p>Uzaktan kapı kontrolü, giriş-çıkış takibi ve canlı yayın özellikleri. WebSocket protokolü üzerinden Raspberry Pi ile iletişim sağlar.</p>
+                        </div>
+                        <div class="col-md-2 feature-image-wrapper">
+                            <div class="feature-image">
+                                <img src="https://images.unsplash.com/photo-1622782914767-404fb9ab3f57?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Mobil Uygulama">
+                            </div>
+                        </div>
+                        <div class="col-md-5"></div>
+                    </div>
+                </div>
+
+                <!-- Step 4: Yüz Tanıma -->
+                <div class="feature-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-5"></div>
+                        <div class="col-md-2 feature-image-wrapper">
+                            <div class="feature-image">
+                                <img src="https://images.unsplash.com/photo-1530707114297-4af4b3cafe16?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Yüz Tanıma">
+                            </div>
+                        </div>
+                        <div class="col-md-5 text-start">
+                            <h3>Yüz Tanıma Teknolojisi</h3>
+                            <p>OpenCV ve LBPH algoritması ile Raspberry Pi üzerinde çalışan yüz tanıma sistemi. Her kişinin 30 fotoğrafı ile eğitilmiş yapay zeka modeli.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5: LED ve Buzzer -->
+                <div class="feature-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-5 text-end">
+                            <h3>LED ve Buzzer Geri Bildirimleri</h3>
+                            <p>Başarılı giriş, başarısız giriş, yüz kaydı ve canlı yayın durumlarına göre LED ve buzzer ile görsel ve işitsel bildirimler.</p>
+                        </div>
+                        <div class="col-md-2 feature-image-wrapper">
+                            <div class="feature-image">
+                                <img src="https://images.unsplash.com/photo-1631053745666-5f3d88db46cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Kırmızı LED">
+                            </div>
+                        </div>
+                        <div class="col-md-5"></div>
+                    </div>
+                </div>
+
+                <!-- Step 6: WebSocket API -->
+                <div class="feature-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-5"></div>
+                        <div class="col-md-2 feature-image-wrapper">
+                            <div class="feature-image">
+                                <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="Node.js Logo">
+                            </div>
+                        </div>
+                        <div class="col-md-5 text-start">
+                            <h3>Node.js WebSocket API'si</h3>
+                            <p>Amazon EC2 üzerinde çalışan iki WebSocket API: Komut API'si ve Video API'si. Raspberry Pi ile mobil cihazlar arasında iletişimi sağlar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="min-vh-100 py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">GALERİ</h2>
+            
+            <div class="row g-4">
+                <!-- Image 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="images/gallery/im1.jpg" alt="Akıllı Kilit 1" class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="images/gallery/im2.jpg" alt="Akıllı Kilit 2" class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="images/gallery/im3.jpg" alt="Akıllı Kilit 3" class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="images/gallery/im4.jpg" alt="Akıllı Kilit 4" class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- Image 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Akıllı Kilit 5" class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- Image 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Akıllı Kilit 6" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="team" class="min-vh-100 py-5">
+        <div class="container">
+            <h2 class="text-center section-title mb-5">EKİP</h2>
+            
+            <div class="row g-4 mb-5">
+                <!-- Ekip Üyesi 1 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-member text-center">
+                        <div class="member-image">
+                            <img src="images/team/akif.jpg" alt="Mehmet Akif Ersoy">
+                        </div>
+                        <h3 class="member-name">Mehmet Akif Ersoy</h3>
+                    </div>
+                </div>
+
+                <!-- Ekip Üyesi 2 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-member text-center">
+                        <div class="member-image">
+                            <img src="images/team/nazanin.jpg" alt="Nazanin Mohammadzadeh">
+                        </div>
+                        <h3 class="member-name">Nazanin Mohammadzadeh</h3>
+                    </div>
+                </div>
+
+                <!-- Ekip Üyesi 3 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-member text-center">
+                        <div class="member-image">
+                            <img src="images/team/muhammed.jpg" alt="Muhammed Çalışkan">
+                        </div>
+                        <h3 class="member-name">Muhammed Çalışkan</h3>
+                    </div>
+                </div>
+
+                <!-- Ekip Üyesi 4 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-member text-center">
+                        <div class="member-image">
+                            <img src="images/team/melis.jpg" alt="Melis Kılıç">
+                        </div>
+                        <h3 class="member-name">Melis Kılıç</h3>
+                    </div>
+                </div>
+
+                <!-- Ekip Üyesi 5 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-member text-center">
+                        <div class="member-image">
+                            <img src="images/team/kamer.jpg" alt="Kamer Balta">
+                        </div>
+                        <h3 class="member-name">Kamer Balta</h3>
+                    </div>
+                </div>
+
+                <!-- Ekip Üyesi 6 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-member text-center">
+                        <div class="member-image">
+                            <img src="images/team/ayse.jpg" alt="Ayşenur Navruz">
+                        </div>
+                        <h3 class="member-name">Ayşenur Navruz</h3>
+                    </div>
+                </div>
+
+                <!-- Ekip Üyesi 7 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-member text-center">
+                        <div class="member-image">
+                            <img src="images/team/elif.jpg" alt="Elif Nur Çakıcı">
+                        </div>
+                        <h3 class="member-name">Elif Nur Çakıcı</h3>
+                    </div>
+                </div>
+
+                <!-- Ekip Üyesi 8 -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="team-member text-center">
+                        <div class="member-image">
+                            <img src="images/team/muharrem.jpg" alt="Muharrem Dikilitaş">
+                        </div>
+                        <h3 class="member-name">Muharrem Dikilitaş</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Teşekkür Mesajı -->
+            <div class="text-center thanks-message">
+                <h3>TÜM EKİBE EMEKLERİ İÇİN TEŞEKKÜRLER</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS ve diğer gerekli scriptler -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
